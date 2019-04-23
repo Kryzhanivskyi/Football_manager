@@ -9,7 +9,6 @@ from apps.manager.models import Team
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
-        result = []
         useragent = UserAgent()
         headers = {
             'User-Agent': useragent.random,

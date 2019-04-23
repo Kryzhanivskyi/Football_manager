@@ -15,10 +15,7 @@ class Command(BaseCommand):
             'User-Agent': useragent.random,
         }
 
-        # 'italy': 5 DOESN'T WORK PAGE! PLEASE TRY LATER
         COUNTRY = {'england': 2, 'ukraine': 1, 'germany': 3, 'spain': 4, 'france': 8}
-
-        result = []
 
         for url in COUNTRY.keys():
             sleep(random.randint(3, 7))

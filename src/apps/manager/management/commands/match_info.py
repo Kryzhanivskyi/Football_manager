@@ -88,11 +88,3 @@ class Command(BaseCommand):
                 Match.objects.create(date_and_time=new_datetime_str, score_ended=score_ended, round=tour,
                                      country_id=COUNTRY[url][0], guest_team_id=guest.id, host_team_id=host.id,
                                      tour_id=COUNTRY[url][1])
-        #         new_match = Match(date_and_time=date_and_time, score_ended=score_ended, round=tour,
-        #                           country_id=COUNTRY[url][0], guest_team_id=guest.id, host_team_id=host.id,
-        #                           tour_id=COUNTRY[url][1])
-        #         result.append(new_match)
-        #
-        # Match.objects.bulk_create(result)
-                # print(f'tour: {tour}, host_team: {host_team}, guest_team: {guest_team}, score_ended: {score_ended},'
-                #       f'date: {date_and_time}, country: {COUNTRY[url][0]}, tournament: {COUNTRY[url][1]}')
